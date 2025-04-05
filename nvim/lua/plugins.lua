@@ -15,6 +15,8 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 Plug 'feline-nvim/feline.nvim'
+Plug 'jackMort/ChatGPT.nvim'  " GPT-based code generation tool
+Plug 'tpope/vim-commentary'
 
 set encoding=UTF-8
 call plug#end()

@@ -59,6 +59,22 @@ vim.api.nvim_set_keymap("n", "<F8>", ":TagbarToggle<CR>", opts)
 -- Special Insert mode mapping for coc
 vim.api.nvim_set_keymap("i", "<Tab>", "pumvisible() ? coc#_select_confirm() : '<Tab>'", { expr = true })
 
+
+-- Enable shift + Arrow keys for selection
+vim.api.nvim_set_keymap("n", "<S-Left>", "v<Left>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<S-Right>", "v<Right>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<S-Up>", "v<Up>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<S-Down>", "v<Down>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "<S-Left>", "<Left>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "<S-Right>", "<Right>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "<S-Up>", "<Up>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "<S-Down>", "<Down>", { noremap = true, silent = true })
+
+-- comment toggle
+vim.api.nvim_set_keymap("n", "gcc", ":Commentary<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "gc", ":Commentary<CR>", { noremap = true, silent = true })
+
+
 -- Remove preview from completeopt
 vim.cmd("set completeopt-=preview")
 
